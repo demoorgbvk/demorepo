@@ -8,6 +8,8 @@ jobs:
       - run: echo "welcome to demo job1 step1"
       - name: job 1 step 2
         run: echo "job1 step2"
+      - name: host name display
+        run: hostname
   job2: 
     runs-on: ubuntu-latest
     steps:
@@ -15,3 +17,5 @@ jobs:
         name: cloning the repo job2 step1
       - name: list files in the repo job2 step2
         run: ls
+      - name: display hostname
+        run: hostname  
