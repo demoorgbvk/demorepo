@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@v4
         name: cloning the repo job2 step1
       - name: list files in the repo job2 step2
-        run: ls demorepo
+        run: ls
       - name: display hostname
         run: hostname  
