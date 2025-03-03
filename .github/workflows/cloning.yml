@@ -13,9 +13,9 @@ jobs:
   job2: 
     runs-on: ubuntu-latest
     steps:
-      - run: git clone https://github.com/demoorgbvk/demorepo.git
+      - uses: actions/checkout@v4
         name: cloning the repo job2 step1
       - name: list files in the repo job2 step2
-        run: ls
+        run: ls demorepo
       - name: display hostname
         run: hostname  
